@@ -6,17 +6,17 @@ n = float(input("Enter number times interest is Compounded per years:"))
 PMT = float(input("Enter Annuity Payment (PMT):"))
 
 def si():
-    """simple interest"""
+    # simple interest
     A = P * (1 + ((R/100) * T))
     return A
 
 def ci():
-    """Compound interest"""
+    # Compound interest
     A = P * (1 + R / (100 * n)) ** (n * T)
     return A
 
 def ap():
-    """Annuity Plan"""
+    # Annuity Plan
     A = PMT * (((1 + R/n) ** (n * T)) - 1) / (R/n)
     return A
 
